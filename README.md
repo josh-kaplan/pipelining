@@ -39,6 +39,10 @@ reasons:
 
 Finally, a Python script `results.py` reads the timing results and plots them.
 
+Then you get a result looking something like this:
+
+![Results](./results.png?raw=true)
+
 ## Try it yourself
 
 First, I ran this on Mac OS X. I have not tested it on any other system. 
