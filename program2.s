@@ -24,7 +24,7 @@ repeat:
 
     ; Loop
     add     ecx, 1
-    cmp     ecx, 25000000  ; Loop counter - must be the same as program 2
+    cmp     ecx, 25000000  ; Loop counter - must be the same as program 1
     jle     repeat
 
     ; Exit
