@@ -28,7 +28,7 @@ repeat:
     jle     repeat
     
     ; Exit
-    mov     eax, 1
-    push    dword 0
-    sub     esp, 4
+    mov     eax, 1      ; sys_exit
+    push    dword 0     ; return value
+    sub     esp, 4      ; apparently OSX and BSD need this extra space
     int     0x80
