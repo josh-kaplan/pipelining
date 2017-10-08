@@ -18,10 +18,10 @@ compiles all the programs, and runs a few tests in different orders to help
 reduce the impact of OS process scheduling.
 
 The `timer.c` file is designed to time the execution of a shell command. It
-is only accurate to microseconds. I couldn't find a way to do nanoseconds 
-timing on OS X with the amount of effort I wanted to put in to this. So, we 
-have microsecond timing. The results of the timer are dumped to .dat files
-by the *run_tests* script.
+is only accurate on the scale of microseconds. I couldn't find a way to do 
+nanosecond timing on OS X with the amount of effort I wanted to put in to this. 
+So, we  have microsecond timing. The results of the timer are dumped to .dat 
+files by the *run_tests* script.
 
 `program1.s` and `program2.s` are assembly programs with and without pipelining
 hazards respectively. They execute the same exact instructions, but in a 
@@ -64,4 +64,18 @@ The Python script depends on [matplotlib](https://matplotlib.org/) and
 Once you've gotten all the dependencies installed (and made any necessary
 cross-platform changes), just run `./run_tests.sh`.
 
+## More Results
+
+**Loop 25,000,000 times**
+![Results](./results.png?raw=true)
+
+**Loop 1,000,000 times**
+![Results](./results_less_ambiguous.png?raw=true)
+
+**Loop 100,000 times**
+![Results](./results_ambiguous.png?raw=true)
+
+
+**Loop 10,000 times**
+![Results](./results_more_ambiguous.png?raw=true)
 

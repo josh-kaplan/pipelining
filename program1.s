@@ -14,7 +14,7 @@ start:
     mov     ecx, 0
 
 repeat:    
-    ; Do somethings with pipelining hazards
+    ; Do some things with pipelining hazards
     push    dword 0
     pop     eax
     add     eax, 1

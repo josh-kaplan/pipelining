@@ -32,5 +32,3 @@ repeat:
     push    dword 0
     sub     esp, 4
     int     0x80
-
-
